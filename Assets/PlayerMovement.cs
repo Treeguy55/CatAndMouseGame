@@ -1,45 +1,53 @@
-
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 6f;
-    public float gravity = -9.81f;
+    public float speed = 5f;
+    public float mouseSensitivity = 2f;
+    public Transform cameraTransform;
 
     private CharacterController controller;
-    private Vector3 velocity;
-    public bool canMove = false;
+    private float verticalRotation = 0f;
+    private bool canMove = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (!canMove) return;
+        if (!canMove || Time.timeScale == 0f) return;
 
-        if (!GameState.gameStarted) return;
-        //Movement
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        // Mouse look
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        transform.Rotate(Vector3.up * mouseX);
+        verticalRotation -= mouseY;
+        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
+        cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        // Movement
+        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Vertical");
+        Vector3 move = transform.right * moveX + transform.forward * moveZ;
         controller.Move(move * speed * Time.deltaTime);
+    }
 
-        //Gravity
-        if (!controller.isGrounded)
-        {
-            velocity.y += gravity * Time.deltaTime;
-            controller.Move(velocity * Time.deltaTime);
+    public void EnableMovement()
+    {
+        canMove = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
-        }
-        else
-        {
-            velocity.y = -2f;
-        }
+    public void DisableMovement()
+    {
+        canMove = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

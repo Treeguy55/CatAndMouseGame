@@ -16,6 +16,7 @@ public class MainMenuManager : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        FindObjectOfType<PlayerMovement>()?.EnableMovement();
 
         GameState.gameStarted = true;
        
