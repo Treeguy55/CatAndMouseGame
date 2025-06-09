@@ -9,6 +9,16 @@
     "B:\\6000.1.5f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.ai.navigation@1.1.6": {
+      "name": "com.unity.ai.navigation",
+      "displayName": "AI Navigation",
+      "resolvedPath": "B:\\Cat and Mouse Game\\CatAndMouseGame\\Library\\PackageCache\\com.unity.ai.navigation@9c58cc377c82",
+      "fingerprint": "9c58cc377c824d4b31a0b4d683532fa1351e743a",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "1.1.6",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.collab-proxy@2.8.2": {
       "name": "com.unity.collab-proxy",
       "displayName": "Version Control",
