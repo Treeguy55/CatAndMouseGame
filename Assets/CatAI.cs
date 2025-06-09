@@ -5,24 +5,32 @@ public class CatAI : MonoBehaviour
 {
     public Transform player;
     public Transform[] patrolPoints;
-    public float visionRange = 10f;
-    public float visionAngle = 60f;
+    public float viewDistance = 10f;
+    public float viewAngle = 60f;
 
     private NavMeshAgent agent;
     private int currentPoint = 0;
     private bool isChasing = false;
-
-    public float fieldOfView = 90f;
+    public GameOverUI gameOverUI;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         if (patrolPoints.Length > 0)
-            agent.SetDestination(patrolPoints[currentPoint].position);
+            agent.destination = patrolPoints[0].position;
     }
 
     void Update()
     {
+        if (!GameState.gameStarted)
+        {
+            agent.isStopped = true;
+            return;
+        }
+        else
+        {
+            agent.isStopped = false;
+        }
         if (CanSeePlayer())
         {
             isChasing = true;
@@ -30,12 +38,26 @@ public class CatAI : MonoBehaviour
         }
         else if (isChasing)
         {
-            // Lost sight of player, go back to patrolling
-            isChasing = false;
-            agent.SetDestination(patrolPoints[currentPoint].position);
+            float distance = Vector3.Distance(transform.position, player.position);
+            if (distance > viewDistance * 1.5f)
+            {
+                isChasing = false;
+                agent.SetDestination(patrolPoints[currentPoint].position);
+            }
+            else
+            {
+                agent.SetDestination(player.position);
+            }
         }
+        else
+        {
+            Patrol();
+        }
+    }
 
-        if (!isChasing && !agent.pathPending && agent.remainingDistance < 0.5f)
+    void Patrol()
+    {
+        if (!agent.pathPending && agent.remainingDistance < 0.5f)
         {
             currentPoint = (currentPoint + 1) % patrolPoints.Length;
             agent.SetDestination(patrolPoints[currentPoint].position);
@@ -45,44 +67,33 @@ public class CatAI : MonoBehaviour
     bool CanSeePlayer()
     {
         Vector3 dirToPlayer = player.position - transform.position;
-        float distance = dirToPlayer.magnitude;
-
-        if (distance > visionRange)
-            return false;
-
         float angle = Vector3.Angle(transform.forward, dirToPlayer);
-        if (angle > visionAngle / 2f)
-            return false;
 
-        Ray ray = new Ray(transform.position + Vector3.up * 0.5f, dirToPlayer.normalized);
-        if (Physics.Raycast(ray, out RaycastHit hit, visionRange))
+        if (dirToPlayer.magnitude < viewDistance && angle < viewAngle * 0.5f)
         {
-            return hit.transform == player;
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position + Vector3.up, dirToPlayer.normalized, out hit, viewDistance))
+            {
+                return hit.transform == player;
+            }
         }
-
         return false;
     }
 
-    void OnDrawGizmosSelected()
+    void OnCollisionEnter(Collision collision)
     {
-        if (player == null) return;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            gameOverUI.ShowGameOver();
+        }
+    }
 
-        // Vision range
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, visionRange);
 
-        // Vision cone
-        Vector3 forward = transform.forward * visionRange;
-        float halfFOV = fieldOfView / 2f;
-
-        Quaternion leftRayRotation = Quaternion.Euler(0, -halfFOV, 0);
-        Quaternion rightRayRotation = Quaternion.Euler(0, halfFOV, 0);
-
-        Vector3 leftRay = leftRayRotation * forward;
-        Vector3 rightRay = rightRayRotation * forward;
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, leftRay);
-        Gizmos.DrawRay(transform.position, rightRay);
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            gameOverUI.ShowGameOver();
+        }
     }
 }
