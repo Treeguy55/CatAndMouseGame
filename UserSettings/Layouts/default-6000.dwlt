@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 106
+  controlID: 100
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -141,8 +141,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 941
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 226}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 46
+  controlID: 37
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -404,10 +404,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 208}
-      m_SelectedIDs: 92870000
-      m_LastClickedID: 34706
-      m_ExpandedIDs: ae78ffffb278ffff66e7ffffe8e7ffff0aeeffff06f6ffff8cf9ffffb8ffffffb47e0000a0800000de810000f68100006c820000228300002e830000908300004a840000ce840000d286000024880000d28800000c8900004c89000050890000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: b6f9ffffb8ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -941,9 +941,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -124.005646, y: -24.765837, z: -73.80751}
+    m_Target: {x: -118.719246, y: -38.80529, z: -67.376236}
     speed: 2
-    m_Value: {x: -124.005646, y: -24.765837, z: -73.80751}
+    m_Value: {x: -118.719246, y: -38.80529, z: -67.376236}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -989,13 +989,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.12722583, y: -0.85727614, z: 0.25395268, w: 0.42944905}
+    m_Target: {x: 0.13182828, y: -0.86392635, z: 0.29446626, w: 0.38674298}
     speed: 2
-    m_Value: {x: 0.12760489, y: -0.85661936, z: 0.2537581, w: 0.43072864}
+    m_Value: {x: 0.13124621, y: -0.864355, z: 0.29316595, w: 0.38693488}
   m_Size:
-    m_Target: 54.632385
+    m_Target: 61.87612
     speed: 2
-    m_Value: 54.55791
+    m_Value: 61.986122
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1249,7 +1249,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Meilani\Documents\GitHub\CatAndMouseGame
   m_LockTracker:
@@ -1268,7 +1268,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: 1a7d0000
     m_LastClickedID: 32026
-    m_ExpandedIDs: 00000000147d0000167d0000187d00001a7d000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000167d0000187d00001a7d00001c7d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 42720000
     m_LastClickedID: 29250
-    m_ExpandedIDs: 00000000147d0000167d0000187d00001a7d0000
+    m_ExpandedIDs: 00000000167d0000187d00001a7d00001c7d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
