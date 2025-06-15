@@ -11,11 +11,12 @@ public class CatAI : MonoBehaviour
     private NavMeshAgent agent;
     private int currentPoint = 0;
     private bool isChasing = false;
+    private bool playerIsHidden = false;
+
     public GameOverUI gameOverUI;
 
     void Start()
     {
-     
         agent = GetComponent<NavMeshAgent>();
         if (patrolPoints.Length > 0)
             agent.destination = patrolPoints[0].position;
@@ -32,6 +33,27 @@ public class CatAI : MonoBehaviour
         {
             agent.isStopped = false;
         }
+
+        // Update hidden status from player component
+        PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+        playerIsHidden = playerMovement != null && playerMovement.isHidden;
+
+        if (playerIsHidden)
+        {
+            // Player is hidden: stop chasing and return to patrol
+            isChasing = false;
+            if (!agent.pathPending && agent.remainingDistance < 0.5f)
+            {
+                Patrol();
+            }
+            else
+            {
+                agent.SetDestination(patrolPoints[currentPoint].position);
+            }
+            return;
+        }
+
+        // Normal chase/patrol behavior
         if (CanSeePlayer())
         {
             isChasing = true;
@@ -67,6 +89,9 @@ public class CatAI : MonoBehaviour
 
     bool CanSeePlayer()
     {
+        if (playerIsHidden)
+            return false;
+
         Vector3 dirToPlayer = player.position - transform.position;
         float angle = Vector3.Angle(transform.forward, dirToPlayer);
 
@@ -83,16 +108,15 @@ public class CatAI : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !playerIsHidden)
         {
             gameOverUI.ShowGameOver();
         }
     }
 
-
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !playerIsHidden)
         {
             gameOverUI.ShowGameOver();
         }

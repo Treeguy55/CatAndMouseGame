@@ -1,20 +1,49 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
-    public float mouseSensitivity = 2f;
+    public float lookSensitivity = 2f;
     public Transform cameraTransform;
 
     private CharacterController controller;
-    private float verticalRotation = 0f;
+    private Vector2 moveInput;
+    private Vector2 lookInput;
+    private float verticalRotation;
     private bool canMove = false;
+
+    private PlayerControls controls;
+
+    [HideInInspector]
+    public bool isHidden = false;
+
+    void Awake()
+    {
+        controller = GetComponent<CharacterController>();
+
+        controls = new PlayerControls();
+
+        controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+
+        controls.Player.Look.performed += ctx => lookInput = ctx.ReadValue<Vector2>();
+        controls.Player.Look.canceled += ctx => lookInput = Vector2.zero;
+    }
+
+    void OnEnable()
+    {
+        controls.Enable();
+    }
+
+    void OnDisable()
+    {
+        controls.Disable();
+    }
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
-        
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -23,21 +52,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!canMove || Time.timeScale == 0f) return;
 
-        // Mouse look
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-        transform.Rotate(Vector3.up * mouseX);
-        verticalRotation -= mouseY;
-        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
-        cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
-
         // Movement
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
-        Vector3 move = transform.right * moveX + transform.forward * moveZ;
+        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
         controller.Move(move * speed * Time.deltaTime);
 
-        
+        // Look
+        transform.Rotate(Vector3.up * lookInput.x * lookSensitivity);
+        verticalRotation -= lookInput.y * lookSensitivity;
+        verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
+        cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
     }
 
     public void EnableMovement()
@@ -52,5 +75,23 @@ public class PlayerMovement : MonoBehaviour
         canMove = false;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("HideZone"))
+        {
+            isHidden = true;
+            Debug.Log("Player is now hidden");
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("HideZone"))
+        {
+            isHidden = false;
+            Debug.Log("Player is no longer hidden");
+        }
     }
 }
