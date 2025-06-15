@@ -2,7 +2,7 @@ Using pre-set license
 Built from '6000.1/staging' branch; Version is '6000.1.5f1 (923722cbbcfc) revision 9582370'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16334 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-Date: 2025-06-15T00:32:56Z
+Date: 2025-06-15T00:58:19Z
 
 COMMAND LINE ARGUMENTS:
 D:\6000.1.5f1\Editor\Unity.exe
@@ -16,7 +16,7 @@ C:/Users/Meilani/Documents/GitHub/CatAndMouseGame
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61265
+62040
 -job-worker-count
 7
 -background-job-worker-count
@@ -62,12 +62,12 @@ C:/Users/Meilani/Documents/GitHub/CatAndMouseGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24428]  Target information:
+Player connection [27424]  Target information:
 
-Player connection [24428]  * "[IP] 192.168.0.40 [Port] 0 [Flags] 2 [Guid] 1947705013 [EditorId] 1947705013 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2B4VVIJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [27424]  * "[IP] 192.168.0.40 [Port] 0 [Flags] 2 [Guid] 927607063 [EditorId] 927607063 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2B4VVIJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24428] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24428] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27424] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [27424] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -79,7 +79,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.5f1 (923722cbbcfc)
 [Subsystems] Discovering subsystems at path D:/6000.1.5f1/Editor/Data/Resources/UnitySubsystems
@@ -95,19 +95,19 @@ Initialize mono
 Mono path[0] = 'D:/6000.1.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/6000.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/6000.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56436
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/6000.1.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/6000.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003488 seconds.
-- Loaded All Assemblies, in  0.555 seconds
+Registered in 0.002526 seconds.
+- Loaded All Assemblies, in  0.565 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.475 seconds
-Domain Reload Profiling: 1029ms
-	BeginReloadAssembly (184ms)
+- Finished resetting the current domain, in  0.474 seconds
+Domain Reload Profiling: 1039ms
+	BeginReloadAssembly (194ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -115,25 +115,25 @@ Domain Reload Profiling: 1029ms
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (54ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (232ms)
-		LoadAssemblies (184ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (237ms)
+		LoadAssemblies (193ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (228ms)
-			TypeCache.Refresh (226ms)
-				TypeCache.ScanAssembly (208ms)
+		AnalyzeDomain (233ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (214ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
 	FinalizeReload (475ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (429ms)
+		SetupLoadedEditorAssemblies (428ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (77ms)
+			InitializePlatformSupportModulesInManaged (80ms)
 			SetLoadedEditorAssemblies (5ms)
 			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (177ms)
-			ProcessInitializeOnLoadMethodAttributes (84ms)
+			ProcessInitializeOnLoadAttributes (180ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -142,353 +142,57 @@ Domain Reload Profiling: 1029ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.927 seconds
-Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.923 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.830 seconds
-Domain Reload Profiling: 1754ms
-	BeginReloadAssembly (254ms)
+- Finished resetting the current domain, in  0.717 seconds
+Domain Reload Profiling: 1637ms
+	BeginReloadAssembly (252ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (54ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (53ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (549ms)
-		LoadAssemblies (445ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (545ms)
+		LoadAssemblies (432ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (260ms)
-			TypeCache.Refresh (205ms)
-				TypeCache.ScanAssembly (189ms)
-			BuildScriptInfoCaches (44ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (830ms)
+			TypeCache.Refresh (210ms)
+				TypeCache.ScanAssembly (194ms)
+			BuildScriptInfoCaches (39ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (717ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (620ms)
+		SetupLoadedEditorAssemblies (569ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (143ms)
-			ProcessInitializeOnLoadAttributes (430ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (390ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3422 unused Assets / (1.1 MB). Loaded Objects now: 3925.
-Memory consumption went from 85.5 MB to 84.4 MB.
-Total: 7.082200 ms (FindLiveObjects: 0.479300 ms CreateObjectMapping: 0.188700 ms MarkObjects: 5.350300 ms  DeleteObjects: 1.062500 ms)
+Unloading 3422 unused Assets / (1.0 MB). Loaded Objects now: 3925.
+Memory consumption went from 85.5 MB to 84.5 MB.
+Total: 7.976800 ms (FindLiveObjects: 0.607800 ms CreateObjectMapping: 0.272900 ms MarkObjects: 5.972800 ms  DeleteObjects: 1.121900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 318778.325513 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (23).asset
-  artifactKey: Guid(0d0bf3b7048789446b2051546c1af883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (23).asset using Guid(0d0bf3b7048789446b2051546c1af883) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9777420b6e4da48ac066346a6846a20e') in 0.0494716 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (17).asset
-  artifactKey: Guid(516372070288d014c8a5e211b79423c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (17).asset using Guid(516372070288d014c8a5e211b79423c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '898783ad3b8f5e5f63bb39146d95d488') in 0.0014298 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (9).asset
-  artifactKey: Guid(e5a022e02626fe844bc0aebb384cc46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (9).asset using Guid(e5a022e02626fe844bc0aebb384cc46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67e5ab96c50a8562a3d7e12dd4cd65e3') in 0.0013481 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (5).asset
-  artifactKey: Guid(d98b73143a308074592ff7df4e6eb842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (5).asset using Guid(d98b73143a308074592ff7df4e6eb842) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '490ef801988f87de7d022f5ce1276d5b') in 0.0012616 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (4).asset
-  artifactKey: Guid(10844005237365d4e9bcec605c1db085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (4).asset using Guid(10844005237365d4e9bcec605c1db085) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21708de97758177c80211ca84337e847') in 0.001196 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (20).asset
-  artifactKey: Guid(63428fa3e75ea644fb9a5fcec6adbbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (20).asset using Guid(63428fa3e75ea644fb9a5fcec6adbbde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '441139ccd25128f881a168b573ca3e98') in 0.0015136 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (31).asset
-  artifactKey: Guid(64a1699945845c14581f8f303cea0637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (31).asset using Guid(64a1699945845c14581f8f303cea0637) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '349f3795a07f54d409fec12072872b94') in 0.0013628 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (24).asset
-  artifactKey: Guid(f0e7e375556bf4b4b90c5f4bd653258e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (24).asset using Guid(f0e7e375556bf4b4b90c5f4bd653258e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6d1d6158b6abc3445476b822f5b5837') in 0.0012971 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (34).asset
-  artifactKey: Guid(41b715b52a60a2949bc99cb3f8078bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (34).asset using Guid(41b715b52a60a2949bc99cb3f8078bb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b612a210d46a391a8b5647a8c8c43be6') in 0.0012956 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (35).asset
-  artifactKey: Guid(e6397465aafa64c4faffbb7041b61bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (35).asset using Guid(e6397465aafa64c4faffbb7041b61bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21178f437b9034b7c0a7f0c76ccf9b8b') in 0.0014047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (12).asset
-  artifactKey: Guid(81a825aaaf9145040b87ef8b89304ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (12).asset using Guid(81a825aaaf9145040b87ef8b89304ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59f11d19054b6e8e9a7c9c316755e1f8') in 0.0012562 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (28).asset
-  artifactKey: Guid(8f1b2ff2da01f574596c4aae15dd1848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (28).asset using Guid(8f1b2ff2da01f574596c4aae15dd1848) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e1e3ae28267bfbed4e5df9f75a40273') in 0.00142 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (32).asset
-  artifactKey: Guid(fbe5945b5e6847c47bbd46eb7d70019e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (32).asset using Guid(fbe5945b5e6847c47bbd46eb7d70019e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e885e236ba04a52071690250a5ae206') in 0.0013823 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (16).asset
-  artifactKey: Guid(89ca013f446cc2845b95eb41a200181c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (16).asset using Guid(89ca013f446cc2845b95eb41a200181c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7bce10a1c7723e5ebc27bac897835e1') in 0.0013311 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (1).asset
-  artifactKey: Guid(346e4ae7b78f8bf48b31cb291e259f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (1).asset using Guid(346e4ae7b78f8bf48b31cb291e259f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a85ae26632e508e84c29fcc3e123962') in 0.001336 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (6).asset
-  artifactKey: Guid(9b4ba26ceb55c5842b5d77557e9f98c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (6).asset using Guid(9b4ba26ceb55c5842b5d77557e9f98c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfd42f7e9413d902299978fd76fa7347') in 0.0016934 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (29).asset
-  artifactKey: Guid(0c999786c80d41b408d8c2679d17307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (29).asset using Guid(0c999786c80d41b408d8c2679d17307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61e0b303f359847668db671757b8eec5') in 0.0014716 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Scenes/SampleScene/LightingData.asset
-  artifactKey: Guid(f1d0e85f8f8679641ae13a0e581541b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/LightingData.asset using Guid(f1d0e85f8f8679641ae13a0e581541b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97d0a649047259aad07d66eab9d6700c') in 0.0014034 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile.asset
-  artifactKey: Guid(aaef2bc99a6f468449046df435a6449f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile.asset using Guid(aaef2bc99a6f468449046df435a6449f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93f57a261cd21d559e0e89189a93672d') in 0.0013361 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (11).asset
-  artifactKey: Guid(880843abad3a2a245a7f3cbd3bda0fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (11).asset using Guid(880843abad3a2a245a7f3cbd3bda0fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14b0b1f39bfe8ea087d6c02829aa3342') in 0.0013517 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (25).asset
-  artifactKey: Guid(ac3a1f90d57b3a246b41552065f5ced2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (25).asset using Guid(ac3a1f90d57b3a246b41552065f5ced2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5aa88c6b04006b0c82a6a3297057c91') in 0.0012957 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (6) 1.asset
-  artifactKey: Guid(dfb924638cb3088489e7cd303943d93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (6) 1.asset using Guid(dfb924638cb3088489e7cd303943d93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60476a64fff69159cfbe0ee04d91f5f9') in 0.0013682 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (21).asset
-  artifactKey: Guid(930ca55550a44d540bb9cd8fa6f75b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (21).asset using Guid(930ca55550a44d540bb9cd8fa6f75b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3101ad08ca62af57ba4903af72fd3c88') in 0.0017592 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (3).asset
-  artifactKey: Guid(9783d22248e0496408cc4a1587ddbccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (3).asset using Guid(9783d22248e0496408cc4a1587ddbccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06298e2fc4cd0e13c84a1c8e53b10f2f') in 0.0013266 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (15).asset
-  artifactKey: Guid(b3eb14263f9189b468314079b8d38573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (15).asset using Guid(b3eb14263f9189b468314079b8d38573) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f2a1c51f499f2aa8a1095b0ace19632') in 0.0012035 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (2).asset
-  artifactKey: Guid(7d581e0af8430724eb74a8f8b8e3e736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (2).asset using Guid(7d581e0af8430724eb74a8f8b8e3e736) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68d9b043833b55a54f65ca60b2785388') in 0.001228 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (18).asset
-  artifactKey: Guid(90b22728192e8e84a87d37340306d052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (18).asset using Guid(90b22728192e8e84a87d37340306d052) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2bc34fa6be5642865d34763a331e75ee') in 0.0012 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (19).asset
-  artifactKey: Guid(8bca6b1ea7bd98443b59c101b8fa5039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (19).asset using Guid(8bca6b1ea7bd98443b59c101b8fa5039) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8365014250e70d3b645e5986e36959e6') in 0.0011742 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (26).asset
-  artifactKey: Guid(e00f54a5b0a75c346b9ee6237a2249e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (26).asset using Guid(e00f54a5b0a75c346b9ee6237a2249e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fbf5c7d3b49defbeca84283ba4093ef') in 0.0011771 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (8).asset
-  artifactKey: Guid(46e080fefa85b21428e0797fcd1046d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (8).asset using Guid(46e080fefa85b21428e0797fcd1046d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2186585c2973e504b2e8381a1b76f968') in 0.0013327 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (14).asset
-  artifactKey: Guid(782e11d6ff22ac0499e8774cdf82c5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (14).asset using Guid(782e11d6ff22ac0499e8774cdf82c5ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2fe2cc40a8f1262c384273340d6ea4ab') in 0.0011718 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (33).asset
-  artifactKey: Guid(0697eeda637799b42bf653badb512bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (33).asset using Guid(0697eeda637799b42bf653badb512bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '84dfd6bb07b867df3f21a9796521fcdc') in 0.0011459 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (30).asset
-  artifactKey: Guid(62d3ae78a2286044da16ba43a7e86d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (30).asset using Guid(62d3ae78a2286044da16ba43a7e86d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c459e042a948cff64f52369495f26b7e') in 0.0011214 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (10).asset
-  artifactKey: Guid(e07e82f540f12944fbb6408d36cc2b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (10).asset using Guid(e07e82f540f12944fbb6408d36cc2b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66d1c972e37bd8fdb06069e4022fb8ca') in 0.0012003 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (13).asset
-  artifactKey: Guid(a10c6d7eccf7e1f438167871734112f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (13).asset using Guid(a10c6d7eccf7e1f438167871734112f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b70bdc9bd80bdfa5013051acb3643ce5') in 0.0011652 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (22).asset
-  artifactKey: Guid(57620fdeee4f62242a125a22ac05d493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (22).asset using Guid(57620fdeee4f62242a125a22ac05d493) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ffd87719932dfaa5ed77729c48ea821e') in 0.0011479 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Scenes/SampleScene/NavMesh-tile (7).asset
-  artifactKey: Guid(6b89916a46387b14790e5334e3a46054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene/NavMesh-tile (7).asset using Guid(6b89916a46387b14790e5334e3a46054) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19a58fa231b36eaa9b72dcc146f9903d') in 0.0011781 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 95.155678 seconds.
-  path: Assets/Game Objects/newgameobjects/cheese/cheesel_standardSurface1_MaskMap.1001.png
-  artifactKey: Guid(39843f6432d918445a18c4434d20e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Objects/newgameobjects/cheese/cheesel_standardSurface1_MaskMap.1001.png using Guid(39843f6432d918445a18c4434d20e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '529eb60c3201d90b3582de2e05ed8349') in 0.085679 seconds
+  Time since last request: 320325.238052 seconds.
+  path: Assets/Room Pieces/newassets/textures/cat2/cat_standardSurface1_MaskMap.png
+  artifactKey: Guid(158543f18ba5ef8419a02b53ff631577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/cat2/cat_standardSurface1_MaskMap.png using Guid(158543f18ba5ef8419a02b53ff631577) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec123d99f00cd3ca21c524eec126333f') in 0.0990335 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
