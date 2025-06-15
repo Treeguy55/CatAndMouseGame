@@ -1,24 +1,34 @@
-using UnityEditor; // Required for UnityEditor.EditorApplication
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem; // <-- add this for new Input System
 
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     public static bool IsPaused = false;
 
-    // Add reference to your SimpleTimer script
     public SimpleTimer simpleTimer;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        // Check keyboard Escape key
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            if (IsPaused)
-                ResumeGame();
-            else
-                PauseGame();
+            TogglePause();
         }
+
+        // Check controller Start button (common pause button)
+        if (Gamepad.current != null && Gamepad.current.startButton.wasPressedThisFrame)
+        {
+            TogglePause();
+        }
+    }
+
+    void TogglePause()
+    {
+        if (IsPaused)
+            ResumeGame();
+        else
+            PauseGame();
     }
 
     public void ResumeGame()
@@ -27,7 +37,6 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;
         IsPaused = false;
 
-        // Resume the timer counting
         if (simpleTimer != null)
             simpleTimer.StartTimer();
     }
@@ -38,7 +47,6 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0f;
         IsPaused = true;
 
-        // Pause the timer counting
         if (simpleTimer != null)
             simpleTimer.PauseTimer();
     }

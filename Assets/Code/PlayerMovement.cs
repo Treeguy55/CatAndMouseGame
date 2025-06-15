@@ -57,8 +57,12 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
 
         // Look
-        transform.Rotate(Vector3.up * lookInput.x * lookSensitivity);
-        verticalRotation -= lookInput.y * lookSensitivity;
+        Vector2 scaledLook = lookInput;
+        if (Mouse.current != null && Mouse.current.delta.IsActuated())
+            scaledLook *= 0.3f; // Adjust mouse sensitivity separately
+
+        transform.Rotate(Vector3.up * scaledLook.x * lookSensitivity);
+        verticalRotation -= scaledLook.y * lookSensitivity;
         verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
     }
