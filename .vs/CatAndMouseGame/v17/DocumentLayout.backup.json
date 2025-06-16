@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|c:\\users\\dylan\\documents\\github\\catandmousegame\\assets\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\assets\\code\\catai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\catai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|c:\\users\\dylan\\documents\\github\\catandmousegame\\assets\\code\\catpatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\catpatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|c:\\users\\dylan\\documents\\github\\catandmousegame\\assets\\code\\gameoverui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\gameoverui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\assets\\code\\cheesetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\cheesetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\assets\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\assets\\code\\hidezone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\hidezone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\assets\\code\\catai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|solutionrelative:assets\\code\\catai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CCD9B69-961B-F2FD-3499-A63A9133A32A}|Assembly-CSharp.csproj|C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\assets\\textmesh pro\\examples \u0026 extras\\scripts\\vertexzoom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,15 +46,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CatAI.cs",
+              "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CatAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\CatAI.cs",
+              "ToolTip": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CatAI.cs",
+              "RelativeToolTip": "Assets\\Code\\CatAI.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T16:00:27.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CatPatrol.cs",
+              "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CatPatrol.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\CatPatrol.cs",
+              "ToolTip": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CatPatrol.cs",
+              "RelativeToolTip": "Assets\\Code\\CatPatrol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T03:10:01.947Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "CheeseTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CheeseTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\CheeseTrigger.cs",
+              "ToolTip": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CheeseTrigger.cs",
+              "RelativeToolTip": "Assets\\Code\\CheeseTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T00:41:06.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameOverUI.cs",
+              "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\GameOverUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Code\\GameOverUI.cs",
+              "ToolTip": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\GameOverUI.cs",
+              "RelativeToolTip": "Assets\\Code\\GameOverUI.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T00:36:56.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlayerControls.cs",
               "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\PlayerControls.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerControls.cs",
@@ -50,20 +113,7 @@
               "RelativeToolTip": "Assets\\PlayerControls.cs",
               "ViewState": "AgIAAMQBAAAAAAAAAAAkwNQBAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T19:36:09.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CatAI.cs",
-              "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CatAI.cs",
-              "RelativeDocumentMoniker": "Assets\\Code\\CatAI.cs",
-              "ToolTip": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\CatAI.cs",
-              "RelativeToolTip": "Assets\\Code\\CatAI.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAswHsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T16:00:27.395Z"
+              "WhenOpened": "2025-06-15T19:36:09.463Z"
             },
             {
               "$type": "Document",
@@ -73,14 +123,14 @@
               "RelativeDocumentMoniker": "Assets\\Code\\PlayerMovement.cs",
               "ToolTip": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Code\\PlayerMovement.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAowHoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T15:59:08.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HideZone.cs",
               "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\Code\\HideZone.cs",
               "RelativeDocumentMoniker": "Assets\\Code\\HideZone.cs",
@@ -92,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "sc.cs",
               "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\sc.cs",
               "RelativeDocumentMoniker": "Assets\\sc.cs",
@@ -104,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "VertexZoom.cs",
               "DocumentMoniker": "C:\\Users\\Dylan\\Documents\\GitHub\\CatAndMouseGame\\Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\VertexZoom.cs",
               "RelativeDocumentMoniker": "Assets\\TextMesh Pro\\Examples \u0026 Extras\\Scripts\\VertexZoom.cs",

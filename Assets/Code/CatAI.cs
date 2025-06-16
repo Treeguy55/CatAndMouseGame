@@ -5,8 +5,8 @@ public class CatAI : MonoBehaviour
 {
     public Transform player;
     public Transform[] patrolPoints;
-    public float viewDistance = 10f;
-    public float viewAngle = 60f;
+    public float viewDistance = 999f; // Effectively unlimited
+    public float viewAngle = 360f;    // Full circle vision
 
     private NavMeshAgent agent;
     private int currentPoint = 0;
@@ -34,13 +34,11 @@ public class CatAI : MonoBehaviour
             agent.isStopped = false;
         }
 
-        // Update hidden status from player component
         PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
         playerIsHidden = playerMovement != null && playerMovement.isHidden;
 
         if (playerIsHidden)
         {
-            // Player is hidden: stop chasing and return to patrol
             isChasing = false;
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
             {
@@ -53,7 +51,6 @@ public class CatAI : MonoBehaviour
             return;
         }
 
-        // Normal chase/patrol behavior
         if (CanSeePlayer())
         {
             isChasing = true;
@@ -93,16 +90,14 @@ public class CatAI : MonoBehaviour
             return false;
 
         Vector3 dirToPlayer = player.position - transform.position;
-        float angle = Vector3.Angle(transform.forward, dirToPlayer);
 
-        if (dirToPlayer.magnitude < viewDistance && angle < viewAngle * 0.5f)
+        // Optional raycast to avoid seeing through walls
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position + Vector3.up, dirToPlayer.normalized, out hit, viewDistance))
         {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position + Vector3.up, dirToPlayer.normalized, out hit, viewDistance))
-            {
-                return hit.transform == player;
-            }
+            return hit.transform == player;
         }
+
         return false;
     }
 
@@ -122,3 +117,4 @@ public class CatAI : MonoBehaviour
         }
     }
 }
+    
