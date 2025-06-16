@@ -413,6 +413,7 @@
 "Assets/Code/GameOverUI.cs"
 "Assets/Code/GameStartHandler.cs"
 "Assets/Code/GameState.cs"
+"Assets/Code/GameWinUI.cs"
 "Assets/Code/HideZone.cs"
 "Assets/Code/MainMenuManger.cs"
 "Assets/Code/MosueLockManager.cs"

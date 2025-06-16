@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerMovement : MonoBehaviour
@@ -13,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 lookInput;
     private float verticalRotation;
     private bool canMove = false;
+    public GameObject hideOverlay;
+    public GameObject hideOverlayUI;
 
     private PlayerControls controls;
 
@@ -86,7 +89,17 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("HideZone"))
         {
             isHidden = true;
-            Debug.Log("Player is now hidden");
+            Debug.Log("Entered HideZone");
+
+            if (hideOverlayUI != null)
+            {
+                Debug.Log("Activating hideOverlayUI");
+                hideOverlayUI.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("hideOverlayUI is null");
+            }
         }
     }
 
@@ -95,7 +108,17 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("HideZone"))
         {
             isHidden = false;
-            Debug.Log("Player is no longer hidden");
+            Debug.Log("Exited HideZone");
+
+            if (hideOverlayUI != null)
+            {
+                Debug.Log("Deactivating hideOverlayUI");
+                hideOverlayUI.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("hideOverlayUI is null");
+            }
         }
     }
 }

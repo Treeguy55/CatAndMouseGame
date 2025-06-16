@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class CheeseTrigger : MonoBehaviour
 {
-    public GameOverUI gameOverUI; // Assign in Inspector
+    public GameWinUI gameWinUI; // assign in Inspector
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            gameOverUI.ShowGameOver();
+            gameWinUI.ShowGameWin();
         }
     }
 }
