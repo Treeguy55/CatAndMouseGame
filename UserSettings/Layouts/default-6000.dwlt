@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Inspector
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -405,9 +405,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 34850000
+      m_SelectedIDs: c6910000
       m_LastClickedID: 0
-      m_ExpandedIDs: c4f3ffffb8ffffff
+      m_ExpandedIDs: a8f9ffffb8ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1249,7 +1249,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Room Pieces/newassets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1259,16 +1259,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Room Pieces/newassets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Meilani\Documents\GitHub\CatAndMouseGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 438}
-    m_SelectedIDs: 5c840000
-    m_LastClickedID: 33884
-    m_ExpandedIDs: 00000000588400005a8400005c8400005e84000060840000628400006484000066840000688400006a8400006c8400006e840000d88400007085000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 175}
+    m_SelectedIDs: da840000
+    m_LastClickedID: 34010
+    m_ExpandedIDs: 000000005a8400005c8400005e84000060840000628400006484000066840000688400006a8400006c8400006e84000070840000da840000c091000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 42720000
     m_LastClickedID: 29250
-    m_ExpandedIDs: 00000000588400005a8400005c8400005e84000060840000628400006484000066840000688400006a8400006c8400006e840000
+    m_ExpandedIDs: 000000005a8400005c8400005e84000060840000628400006484000066840000688400006a8400006c8400006e84000070840000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
