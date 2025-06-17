@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 94
+  controlID: 36
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -405,9 +405,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: da7afeffd633ffffeee6ffffb8ffffff488d0000988e0000aa8e00001e930000
+      m_SelectedIDs: 408d0000
+      m_LastClickedID: 36160
+      m_ExpandedIDs: 92f9ffffb8ffffffbc870000c4870000a0890000728a0000388b0000408d0000888d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -941,9 +941,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -70.97582, y: 19.910242, z: -11.791905}
+    m_Target: {x: -64.51503, y: -12.561055, z: -19.162455}
     speed: 2
-    m_Value: {x: -70.97582, y: 19.910242, z: -11.791905}
+    m_Value: {x: -64.51503, y: -12.561055, z: -19.162455}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -989,13 +989,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.03195058, y: 0.8985641, z: -0.43492752, w: 0.062050108}
+    m_Target: {x: 0.031986848, y: 0.9059477, z: -0.41860205, w: 0.067047976}
     speed: 2
-    m_Value: {x: 0.032484524, y: 0.8984699, z: -0.43321684, w: 0.06340061}
+    m_Value: {x: 0.031963084, y: 0.9052746, z: -0.41829103, w: 0.06699816}
   m_Size:
-    m_Target: 10
+    m_Target: 12.124355
     speed: 2
-    m_Value: 10
+    m_Value: 12.124355
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1249,7 +1249,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1259,16 +1259,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: B:\Cat and Mouse Game\CatAndMouseGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 628a0000
-    m_LastClickedID: 35426
-    m_ExpandedIDs: 000000005c8a00005e8a0000608a0000628a000000ca9a3b
+    m_SelectedIDs: ce840000
+    m_LastClickedID: 33998
+    m_ExpandedIDs: 000000005e84000060840000628400006484000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1297,7 +1297,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 42720000
     m_LastClickedID: 29250
-    m_ExpandedIDs: 000000004c8a00004e8a0000508a0000528a0000548a0000568a0000588a00005a8a00005c8a00005e8a0000608a0000628a0000
+    m_ExpandedIDs: 000000005e840000608400006284000064840000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000fc860000168d0000908d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
