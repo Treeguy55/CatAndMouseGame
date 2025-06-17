@@ -2,7 +2,7 @@ Using pre-set license
 Built from '6000.1/staging' branch; Version is '6000.1.5f1 (923722cbbcfc) revision 9582370'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 16334 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-Date: 2025-06-16T23:12:34Z
+Date: 2025-06-17T01:29:39Z
 
 COMMAND LINE ARGUMENTS:
 D:\6000.1.5f1\Editor\Unity.exe
@@ -16,7 +16,7 @@ C:/Users/Meilani/Documents/GitHub/CatAndMouseGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50157
+52530
 -job-worker-count
 7
 -background-job-worker-count
@@ -62,12 +62,12 @@ C:/Users/Meilani/Documents/GitHub/CatAndMouseGame
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21920]  Target information:
+Player connection [19956]  Target information:
 
-Player connection [21920]  * "[IP] 192.168.0.40 [Port] 0 [Flags] 2 [Guid] 994934253 [EditorId] 994934253 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2B4VVIJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19956]  * "[IP] 192.168.0.40 [Port] 0 [Flags] 2 [Guid] 3941522178 [EditorId] 3941522178 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2B4VVIJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21920] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21920] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19956] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19956] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -79,7 +79,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 153.81 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.5f1 (923722cbbcfc)
 [Subsystems] Discovering subsystems at path D:/6000.1.5f1/Editor/Data/Resources/UnitySubsystems
@@ -95,45 +95,45 @@ Initialize mono
 Mono path[0] = 'D:/6000.1.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/6000.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/6000.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/6000.1.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/6000.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.662548 seconds.
-- Loaded All Assemblies, in 16.418 seconds
+Registered in 0.002732 seconds.
+- Loaded All Assemblies, in  0.595 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.676 seconds
-Domain Reload Profiling: 17104ms
-	BeginReloadAssembly (12498ms)
+- Finished resetting the current domain, in  0.489 seconds
+Domain Reload Profiling: 1083ms
+	BeginReloadAssembly (202ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (852ms)
+	RebuildCommonClasses (62ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (750ms)
-	LoadAllAssembliesAndSetupDomain (2299ms)
-		LoadAssemblies (12517ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (244ms)
+		LoadAssemblies (201ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2235ms)
-			TypeCache.Refresh (2233ms)
-				TypeCache.ScanAssembly (1842ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (217ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (687ms)
+	FinalizeReload (490ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (621ms)
+		SetupLoadedEditorAssemblies (439ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (94ms)
+			InitializePlatformSupportModulesInManaged (83ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (125ms)
-			ProcessInitializeOnLoadAttributes (297ms)
-			ProcessInitializeOnLoadMethodAttributes (100ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (183ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -142,97 +142,185 @@ Domain Reload Profiling: 17104ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 19.203 seconds
-Refreshing native plugins compatible for Editor in 2.76 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.953 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.899 seconds
-Domain Reload Profiling: 20098ms
-	BeginReloadAssembly (9874ms)
+- Finished resetting the current domain, in  0.762 seconds
+Domain Reload Profiling: 1712ms
+	BeginReloadAssembly (248ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (672ms)
-	RebuildNativeTypeToScriptingClass (19ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (18ms)
 	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (8585ms)
-		LoadAssemblies (17226ms)
+	LoadAllAssembliesAndSetupDomain (577ms)
+		LoadAssemblies (446ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1104ms)
-			TypeCache.Refresh (1042ms)
-				TypeCache.ScanAssembly (960ms)
-			BuildScriptInfoCaches (50ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (227ms)
+				TypeCache.ScanAssembly (211ms)
+			BuildScriptInfoCaches (41ms)
 			ResolveRequiredComponents (8ms)
-	FinalizeReload (900ms)
+	FinalizeReload (763ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (729ms)
+		SetupLoadedEditorAssemblies (616ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (145ms)
-			ProcessInitializeOnLoadAttributes (536ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (442ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 3.02 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3842 unused Assets / (1.6 MB). Loaded Objects now: 4346.
-Memory consumption went from 87.8 MB to 86.2 MB.
-Total: 37.790500 ms (FindLiveObjects: 0.481600 ms CreateObjectMapping: 0.201800 ms MarkObjects: 35.569800 ms  DeleteObjects: 1.535500 ms)
+Unloading 3842 unused Assets / (1.2 MB). Loaded Objects now: 4346.
+Memory consumption went from 87.8 MB to 86.6 MB.
+Total: 7.877900 ms (FindLiveObjects: 0.617700 ms CreateObjectMapping: 0.285300 ms MarkObjects: 5.780800 ms  DeleteObjects: 1.192900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 486796.804637 seconds.
-  path: Assets/Room Pieces/newassets/textures/box2/box2_low_standardSurface1_MaskMap.1001.png
-  artifactKey: Guid(24b321814a8ae7b4e95fdaa75c6049fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Room Pieces/newassets/textures/box2/box2_low_standardSurface1_MaskMap.1001.png using Guid(24b321814a8ae7b4e95fdaa75c6049fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65e123945697d18e6f1844236c44c151') in 0.2714718 seconds
+  Time since last request: 494981.302565 seconds.
+  path: Assets/Room Pieces/newassets/box2_low.fbx
+  artifactKey: Guid(c2432ae21172b71419f2e64494ac698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/box2_low.fbx using Guid(c2432ae21172b71419f2e64494ac698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'adc59c14dabaa8e0c9db7c0ef9400c08') in 0.3229171 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.605829 seconds.
+  path: Assets/Room Pieces/newassets/oven_low.fbx
+  artifactKey: Guid(f95ad69ad7434e74c9be1d8327ce90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/oven_low.fbx using Guid(f95ad69ad7434e74c9be1d8327ce90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '770e8fa3a570a57897639e4c7dcecee1') in 0.2007477 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.425547 seconds.
+  path: Assets/Room Pieces/newassets/fridge_low.fbx
+  artifactKey: Guid(4678684149aebb64daa51cba86edf4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/fridge_low.fbx using Guid(4678684149aebb64daa51cba86edf4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2bc3a9dfac4691a9547d5fec755ce3d') in 0.0662931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.249139 seconds.
+  path: Assets/Room Pieces/newassets/textures/fridge
+  artifactKey: Guid(0de4e2f8b7ecdc14796b6424f5fa69fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/fridge using Guid(0de4e2f8b7ecdc14796b6424f5fa69fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdfc94518838559ed90bc73d5d8984d3') in 0.0005089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.050747 seconds.
+  path: Assets/Room Pieces/newassets/textures/fridge/fridge_low_standardSurface1_BaseColor_sRGB.1001.png
+  artifactKey: Guid(e1d2928fb2bc4914d94a2b0f8a076b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/fridge/fridge_low_standardSurface1_BaseColor_sRGB.1001.png using Guid(e1d2928fb2bc4914d94a2b0f8a076b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c7e8e0768c07b4ac9564b21f98083e7') in 0.0301371 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Room Pieces/newassets/textures/box2/box2texture.mat
-  artifactKey: Guid(b6918d6893645334a8eae9f6c3f587c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Room Pieces/newassets/textures/box2/box2texture.mat using Guid(b6918d6893645334a8eae9f6c3f587c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd88d7298cbc18dcb4cc313cea0c4d31') in 0.4558972 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/Room Pieces/newassets/textures/fridge/fridge_low_standardSurface1_OcclusionRoughnessMetallic_Raw.1001.png
+  artifactKey: Guid(e63afe77a67d53e438b25fe3d695b714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/fridge/fridge_low_standardSurface1_OcclusionRoughnessMetallic_Raw.1001.png using Guid(e63afe77a67d53e438b25fe3d695b714) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c433cb389974d25da10870ec16fee4cf') in 0.0158555 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.206232 seconds.
+  path: Assets/Room Pieces/newassets/textures/fridge/fridgetexture.mat
+  artifactKey: Guid(b8526a80f0713c34a9dfc10294241e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/fridge/fridgetexture.mat using Guid(b8526a80f0713c34a9dfc10294241e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e593786844b59dff21a7b07052be3bd') in 0.0156457 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.607950 seconds.
-  path: Assets/Room Pieces/newassets/textures/box2/box2_low_standardSurface1_Normal.1001.png
-  artifactKey: Guid(4aafa537cfcd3144ea50c9ea2bb448e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Room Pieces/newassets/textures/box2/box2_low_standardSurface1_Normal.1001.png using Guid(4aafa537cfcd3144ea50c9ea2bb448e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7557106c989dfe5a2cf6a93a882be197') in 0.0605493 seconds
+  Time since last request: 6.919227 seconds.
+  path: Assets/Room Pieces/newassets/textures/fridge/fridge_low_standardSurface1_Normal_Raw.1001.png
+  artifactKey: Guid(be0962edf952d034fadebb1bcc3cb18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/fridge/fridge_low_standardSurface1_Normal_Raw.1001.png using Guid(be0962edf952d034fadebb1bcc3cb18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '856e5350a8eef4ac1ff592b2afa65f33') in 0.0388325 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.503091 seconds.
-  path: Assets/Room Pieces/newassets/box2_low.fbx
-  artifactKey: Guid(c2432ae21172b71419f2e64494ac698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Room Pieces/newassets/box2_low.fbx using Guid(c2432ae21172b71419f2e64494ac698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e054fe34110628d95a6018c212255591') in 0.1746554 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+  Time since last request: 37.707724 seconds.
+  path: Assets/Room Pieces/newassets/fridge_low.fbx
+  artifactKey: Guid(4678684149aebb64daa51cba86edf4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/fridge_low.fbx using Guid(4678684149aebb64daa51cba86edf4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86bf9d6e7990d9d844bcc712596c6799') in 0.069136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.142724 seconds.
-  path: Assets/Room Pieces/newassets/textures/box1/box1texture.mat
-  artifactKey: Guid(919e9e43e73463144bf0b541d5ff865c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Room Pieces/newassets/textures/box1/box1texture.mat using Guid(919e9e43e73463144bf0b541d5ff865c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0230737e68923eaf1ad33690c6cd12e') in 0.0638795 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+  Time since last request: 13.856874 seconds.
+  path: Assets/Room Pieces/newassets/textures/oven
+  artifactKey: Guid(52abd5b637c167d4a8ae79fa445af229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/oven using Guid(52abd5b637c167d4a8ae79fa445af229) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66b6ae3cc707bee5204a30123b4680f9') in 0.0005333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.695357 seconds.
-  path: Assets/Room Pieces/newassets/box2_low.fbx
-  artifactKey: Guid(c2432ae21172b71419f2e64494ac698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Room Pieces/newassets/box2_low.fbx using Guid(c2432ae21172b71419f2e64494ac698b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fb9d66b600c6ee841a62f59b4f7b34ec') in 0.0197831 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+  Time since last request: 0.045594 seconds.
+  path: Assets/Room Pieces/newassets/textures/oven/oven_low_standardSurface1_BaseColor_sRGB.1001.png
+  artifactKey: Guid(e33faf0dac64a7f439d6864a7f10c216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/oven/oven_low_standardSurface1_BaseColor_sRGB.1001.png using Guid(e33faf0dac64a7f439d6864a7f10c216) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '667a82f2feccdaacaa0257e6e14521af') in 0.0169415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Room Pieces/newassets/textures/oven/oven_low_standardSurface1_OcclusionRoughnessMetallic_Raw.1001.png
+  artifactKey: Guid(1ef6b84af57ebb14e9d81e99b6c4e947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/oven/oven_low_standardSurface1_OcclusionRoughnessMetallic_Raw.1001.png using Guid(1ef6b84af57ebb14e9d81e99b6c4e947) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bc5bdb7b21df7b1c12e686471dde431') in 0.0145772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.480807 seconds.
+  path: Assets/Room Pieces/newassets/textures/oven/oventexture.mat
+  artifactKey: Guid(4c6074e8d2cbd0741b6f7db49f2cc103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/oven/oventexture.mat using Guid(4c6074e8d2cbd0741b6f7db49f2cc103) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dbc8cc00ad7c3b95c45fd663beafeae') in 0.0151526 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.675490 seconds.
+  path: Assets/Room Pieces/newassets/textures/oven/oven_low_standardSurface1_Normal_Raw.1001.png
+  artifactKey: Guid(4a3741dd5e83a9440855cde3ed59e240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/textures/oven/oven_low_standardSurface1_Normal_Raw.1001.png using Guid(4a3741dd5e83a9440855cde3ed59e240) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a35422898fa0e8da9c9244fffe0a09cf') in 0.0162148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.217191 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat
+  artifactKey: Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat using Guid(9ad269c99dcf42b7aedefd83dd5a7b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '702df6063bf1f846b55c32d4b4c54ab0') in 0.0312247 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.842306 seconds.
+  path: Assets/Room Pieces/newassets/oven_low.fbx
+  artifactKey: Guid(f95ad69ad7434e74c9be1d8327ce90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/oven_low.fbx using Guid(f95ad69ad7434e74c9be1d8327ce90d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f47105e410d0d6ec55773cafad54c2c7') in 0.1157294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.697440 seconds.
+  path: Assets/Room Pieces/newassets/fridge_low.fbx
+  artifactKey: Guid(4678684149aebb64daa51cba86edf4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Room Pieces/newassets/fridge_low.fbx using Guid(4678684149aebb64daa51cba86edf4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '030c71bf73bba614a8166e71f9ff370c') in 0.0777209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 43
 
